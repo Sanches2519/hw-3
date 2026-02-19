@@ -7,6 +7,7 @@
   --main-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --project-border-color: #eeeeee;
+  --project-list-gap: 30px;
 }
 
 body {
@@ -352,14 +353,20 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   text-indent: 24px;
+  margin-right: calc(-1 * var(--project-list-gap));
+  margin-bottom: calc(-1 * var(--project-list-gap));;
 }
 .project-link {
   text-decoration: none;
 }
+
 .project-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  /*border: 1px solid var(--project-border-color);*/
+  border: 1px solid var(--project-border-color);
+}
+.project-list > .project-item {
+  flex-basis: calc(100% / 3 - var(--project-list-gap));
 }
 .project-item:nth-child(3n + 3) {
   margin-right: 0px;
@@ -367,6 +374,7 @@ p {
 .project-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
+
 .project-img {
   margin-bottom: 20px;
 }
