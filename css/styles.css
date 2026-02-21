@@ -254,23 +254,20 @@ p {
 .team-item:last-child {
   margin-right: 0px;
 }
-
-.team-img {
-  margin-bottom: 30px;
+.team-info{
+  padding: 35px 0px;
 }
-
 .team-title {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
   color: var(--main-color-title);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .team-text {
   font-size: 16px;
   text-align: center;
-  padding-bottom: 30px;
 }
 
 /*===============================footer=========================*/
@@ -337,7 +334,7 @@ p {
   cursor: pointer;
   color: var(--main-color-title);
   background-color: var(--secondary-background-color);
-  border: 0px;
+  border: 0;
   border-color: transparent;
   border-radius: 4px;
   padding: 6px 22px;
@@ -348,21 +345,33 @@ p {
   color: #ffffff;
   background-color: var(--active-color);
 }
+.filters-btn-1 {
+  width: 67px;
+}
+.filters-btn-2 {
+  width: 125px;
+}
+.filters-btn-3 {
+  width: 112px;
+}
+.filters-btn-4 {
+  width: 103px;
+}
+.filters-btn-5 {
+  width: 130px;
+}
+
+/*===========================Project==================================*/
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  text-indent: 24px;
   margin-right: calc(-1 * var(--project-list-gap));
-  margin-bottom: calc(-1 * var(--project-list-gap));;
-}
-.project-link {
-  text-decoration: none;
+  margin-bottom: calc(-1 * var(--project-list-gap));
 }
 
 .project-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border: 1px solid var(--project-border-color);
+  margin-right: var(--project-list-gap);
+  margin-bottom: var(--project-list-gap);
 }
 .project-list > .project-item {
   flex-basis: calc(100% / 3 - var(--project-list-gap));
@@ -374,21 +383,26 @@ p {
   margin-bottom: 0px;
 }
 
-.project-img {
-  margin-bottom: 20px;
+.project-link {
+  text-decoration: none;
 }
+.project-content {
+  padding: 20px 24px;
+  border: 1px solid var(--project-border-color);
+  border-top: none;
+}
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 6%;
   color: var(--main-color-title);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .project-text {
   font-size: 16px;
   line-height: 1.875;
   color: var(--main-color-text);
-  padding-bottom: 20px;
 }
