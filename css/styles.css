@@ -16,7 +16,6 @@ body {
   color: var(--main-color-text);
   font-size: 14px;
   line-height: 100%;
-  /*line-height: normal;*/
   letter-spacing: 3%;
 }
 
@@ -212,7 +211,7 @@ p {
 /*====================================features=========================*/
 
 .features-item {
---number: 4;
+  --number: 4;
 }
 
 .features-item:last-child {
@@ -236,7 +235,6 @@ p {
   --number: 3;
 }
 
-
 /*==============================team==========================*/
 .team {
   background-color: var(--secondary-background-color);
@@ -244,7 +242,7 @@ p {
 
 .team-item {
   background-color: #ffffff;
- --number: 4;
+  --number: 4;
 }
 
 .team-info {
